@@ -15,7 +15,7 @@ variable "avail_zone" {}
   description = "Type of ec2"
   type = list(string)
   default = ["t2.micro", "t2.large"]
-}  */
+}  
 
 variable "instanceType" {
   description = "Type of ec2"
@@ -24,7 +24,7 @@ variable "instanceType" {
     "small-app" = "t2.micro"
      "large-app"="t2.large"
      }
-}
+}*/
 variable "instance_ty" {
   description = "Type of ec2"
   default = "t2.micro"
