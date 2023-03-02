@@ -15,7 +15,8 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.53.0"
     }
-  }
+
+     }
 }
 
 # Provider-1 for us-west-2

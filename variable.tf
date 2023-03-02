@@ -38,22 +38,23 @@ variable "instance_ty" {
      "large-app"="t2.large"
      }
 }
+*/
 
 variable "ec2_count" {
   description = "Numbers of ec2"
  }
- */
+ 
 
-variable "website_bucket_name" {
+variable "w_b_name" {
   description = "Name of backend bucket"
   type = string
-  default = "mahvish"
+  default = "website"
 }
 
-variable "tag_name" {
+variable "tag_n" {
   description = "Name of tag of S3 `bucket"
   default = "static_website"
-}
+} 
 
 variable private_key{
  default = "packer.pem"

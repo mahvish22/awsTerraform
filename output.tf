@@ -20,17 +20,17 @@ output "private_ip" {
 # S3 OUTPUT VARIABLE
 output "arn" {
   description = "ID of project VPC"
-  value       = aws_s3_bucket.static_website.arn
+  value       = module.s3_web.arn
 }
 output "name" {
   description = "Name or id of the S3 bucket"
-  value       = aws_s3_bucket.static_website.id
+  value       = module.s3_web.id
 }
 output "domain" {
   description = "Domain name of the S3 bucket"
-  value       = aws_s3_bucket.static_website.website_domain
+  value       = module.s3_web.website_domain
 }
 output "endpoint" {
   description = "Endpoint of the S3 bucket"
-  value       = aws_s3_bucket.static_website.website_endpoint
+  value       = module.s3_web.website_endpoint
 }
