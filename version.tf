@@ -1,6 +1,6 @@
 terraform {
 
-  //required_version = ">= 1.3.0"
+  required_version = ">= 1.3.0"
 
   # backend contains your state file
    backend "s3" {
@@ -13,7 +13,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.53.0"
+      version = "~> 4.56.0"
     }
 
      }
@@ -21,13 +21,13 @@ terraform {
 
 # Provider-1 for us-west-2
 provider "aws" {
- // version = "~> 4.53.0"
+ // version = "~> 4.56.0"
   region  = "us-west-2"
 }
 
 /*Provider-2 for us-east-1
 provider "aws" {
-  version = "~> 4.53.0"
+  version = "~> 4.56.0"
   region  = "us-east-1"
   alias   = "aws-east-1" 
 } */

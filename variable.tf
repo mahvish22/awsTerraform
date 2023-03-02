@@ -38,14 +38,14 @@ variable "instance_ty" {
      "large-app"="t2.large"
      }
 }
-*/
+
 
 variable "ec2_count" {
   description = "Numbers of ec2"
  }
- 
+ */
 
-variable "w_b_name" {
+variable "web_b_name" {
   description = "Name of backend bucket"
   type = string
   default = "website"
