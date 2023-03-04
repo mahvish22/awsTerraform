@@ -1,7 +1,7 @@
 terraform {
 
   required_version = ">= 1.3.0"
-
+/*
   # backend contains your state file
    backend "s3" {
     region = "us-west-2"
@@ -9,6 +9,17 @@ terraform {
     bucket = "awsbackend"
     key    = "test/terraform.tfstate"
   } 
+*/
+
+  cloud {
+    hostname = "app.terraform.io"
+    organization = "terraform_test_cloud"
+
+    workspaces {
+      name = "cli-driven-demo"
+    }
+
+}
 
   required_providers {
     aws = {
