@@ -34,8 +34,14 @@ terraform {
 provider "aws" {
  // version = "~> 4.56.0"
   region  = "us-west-2"
+  secret_key = data.vault_aws_access_credentials.creds.access_key
+  access_key = data.vault_aws_access_credentials.creds.secret_key
+  token = data.vault_aws_access_credentials.creds.security_token
 }
 
+provider "vault" {
+  address = var.vault_address
+  }
 /*Provider-2 for us-east-1
 provider "aws" {
   version = "~> 4.56.0"
